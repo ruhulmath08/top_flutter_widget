@@ -10,5 +10,7 @@ class WidgetModel {
         WidgetModel(name: fittedBoxTitle),
         WidgetModel(name: searchBarTitle),
         WidgetModel(name: adaptiveDesignTitle),
+        WidgetModel(name: flutterHeroWidgetTitle),
+        WidgetModel(name: streamFlowTitle),
       ];
 }

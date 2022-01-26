@@ -31,3 +31,13 @@ const searchBarCode = '';
 const adaptiveDesignRoute = '/adaptive_design';
 const adaptiveDesignTitle = 'Adaptive Design';
 const adaptiveDesignCode = '';
+
+//flutter_hero_widget
+const flutterHeroWidgetRoute = '/flutter_hero_widget';
+const flutterHeroWidgetTitle = 'Flutter Hero Widget';
+const flutterHeroWidgetCode = '';
+
+//stream_flow_screen
+const streamFlowRoute = '/stream_flow';
+const streamFlowTitle = 'Stream Flow';
+const streamFlowCode = '';
