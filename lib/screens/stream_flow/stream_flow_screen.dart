@@ -15,9 +15,15 @@ class _StreamFlowScreenState extends State<StreamFlowScreen> {
     yield 1;
     await Future<void>.delayed(const Duration(seconds: 1));
     yield 2;
-    //throw 'An error occurred';
     await Future<void>.delayed(const Duration(seconds: 1));
     yield 3;
+    await Future<void>.delayed(const Duration(seconds: 1));
+    yield 4;
+    await Future<void>.delayed(const Duration(seconds: 1));
+    yield 5;
+    await Future<void>.delayed(const Duration(seconds: 1));
+    yield 6;
+    throw 'an error occurred';
   })();
 
   @override
