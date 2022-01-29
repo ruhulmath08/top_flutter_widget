@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:top_flutter_widget/routing/routing_constants.dart';
 import 'package:top_flutter_widget/screens/adaptive_design/adaptive_design_screen.dart';
+import 'package:top_flutter_widget/screens/alert_dialog/alert_dialog_screen.dart';
 import 'package:top_flutter_widget/screens/bottom_navigation_bar/bottom_navigation_bar_screen.dart';
 import 'package:top_flutter_widget/screens/date_picker/date_picker_screen.dart';
 import 'package:top_flutter_widget/screens/disable_back_button/disable_back_button_screen.dart';
@@ -17,13 +18,17 @@ import 'package:top_flutter_widget/screens/home/home_screen.dart';
 import 'package:top_flutter_widget/screens/modal_bottom_sheet/modal_bottom_sheet_screen.dart';
 import 'package:top_flutter_widget/screens/page_view_widget/page_view_widget_screen.dart';
 import 'package:top_flutter_widget/screens/popup_menu_button/popup_menu_button_screen.dart';
+import 'package:top_flutter_widget/screens/positioned_widget/positioned_widget_screen.dart';
 import 'package:top_flutter_widget/screens/range_slider/range_slider_screen.dart';
 import 'package:top_flutter_widget/screens/search_bar/search_bar_screen.dart';
 import 'package:top_flutter_widget/screens/show_hide_flutter_widget/show_hide_flutter_widget_screen.dart';
 import 'package:top_flutter_widget/screens/silver_app_bar/silver_app_bar_screen.dart';
+import 'package:top_flutter_widget/screens/spread_operator/spread_operator_screen.dart';
+import 'package:top_flutter_widget/screens/stack_widget/stack_widget_screen.dart';
 import 'package:top_flutter_widget/screens/stepper_screen/stepper_screen.dart';
 import 'package:top_flutter_widget/screens/stream_flow/stream_flow_screen.dart';
 import 'package:top_flutter_widget/screens/time_picker/time_picker_screen.dart';
+import 'package:top_flutter_widget/screens/tool_tip/tool_tip_screen.dart';
 import 'package:top_flutter_widget/screens/wrap_widget/wrap_widget_screen.dart';
 
 /*
@@ -230,6 +235,46 @@ MaterialPageRoute<dynamic>? generateRoute(RouteSettings settings) {
       return MaterialPageRoute(
         builder: (context) => const GridPaperScreen(
           title: gridPaperTitle,
+        ),
+      );
+
+    //tool_tip
+    case toolTipRoute:
+      return MaterialPageRoute(
+        builder: (context) => const ToolTipScreen(
+          title: toolTipTitle,
+        ),
+      );
+
+    //spread_operator
+    case spreadOperatorRoute:
+      return MaterialPageRoute(
+        builder: (context) => const SpreadOperatorScreen(
+          title: spreadOperatorTitle,
+        ),
+      );
+
+    //stack_widget
+    case stackWidgetRoute:
+      return MaterialPageRoute(
+        builder: (context) => const StackWidgetScreen(
+          title: stackWidgetTitle,
+        ),
+      );
+
+    //positioned_widget
+    case positionedWidgetRoute:
+      return MaterialPageRoute(
+        builder: (context) => const PositionedWidgetScreen(
+          title: positionedWidgetTitle,
+        ),
+      );
+
+    //alert_dialog
+    case alertDialogRoute:
+      return MaterialPageRoute(
+        builder: (context) => const AlertDialogScreen(
+          title: alertDialogTitle,
         ),
       );
   }

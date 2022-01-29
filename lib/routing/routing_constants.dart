@@ -131,3 +131,28 @@ const futureBuilderCode = '';
 const gridPaperRoute = '/grid_paper';
 const gridPaperTitle = 'Grid Paper';
 const gridPaperCode = '';
+
+//tool_tip
+const toolTipRoute = '/tool_tip';
+const toolTipTitle = 'Tool Tip';
+const toolTipCode = '';
+
+//spread_operator
+const spreadOperatorRoute = '/spread_operator';
+const spreadOperatorTitle = 'Spread Operator';
+const spreadOperatorCode = '';
+
+//stack_widget
+const stackWidgetRoute = '/stack_widget';
+const stackWidgetTitle = 'Stack Widget';
+const stackWidgetCode = '';
+
+//positioned_widget
+const positionedWidgetRoute = '/positioned_widget';
+const positionedWidgetTitle = 'Positioned Widget';
+const positionedWidgetCode = '';
+
+//alert_dialog
+const alertDialogRoute = '/alert_dialog';
+const alertDialogTitle = 'Alert Dialog';
+const alertDialogCode = '';

@@ -30,5 +30,10 @@ class WidgetModel {
         WidgetModel(name: disableBackButtonTitle),
         WidgetModel(name: futureBuilderTitle),
         WidgetModel(name: gridPaperTitle),
+        WidgetModel(name: toolTipTitle),
+        WidgetModel(name: spreadOperatorTitle),
+        WidgetModel(name: stackWidgetTitle),
+        WidgetModel(name: positionedWidgetTitle),
+        WidgetModel(name: alertDialogTitle),
       ];
 }
