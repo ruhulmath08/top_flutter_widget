@@ -156,3 +156,28 @@ const positionedWidgetCode = '';
 const alertDialogRoute = '/alert_dialog';
 const alertDialogTitle = 'Alert Dialog';
 const alertDialogCode = '';
+
+//make_widget_clickable
+const makeWidgetClickableRoute = '/make_widget_clickable';
+const makeWidgetClickableTitle = 'Make Widget Clickable';
+const makeWidgetClickableCode = '';
+
+//clickable_widget_with_effect
+const clickableWidgetWIthEffectRoute = '/clickable_widget_with_effect';
+const clickableWidgetWIthEffectTitle = 'Clickable Widget With Effect';
+const clickableWidgetWIthEffectCode = '';
+
+//interactive_widget
+const interactiveWidgetRoute = '/interactive_widget';
+const interactiveWidgetTitle = 'Interactive Widget';
+const interactiveWidgetCode = '';
+
+//checkbox_list_tile
+const checkboxListTileRoute = '/checkbox_list_tile';
+const checkboxListTileTitle = 'Checkbox List Tile';
+const checkboxListTileCode = '';
+
+//selectable_text
+const selectableTextRoute = '/selectable_text';
+const selectableTextTitle = 'Selectable Text';
+const selectableTextCode = '';

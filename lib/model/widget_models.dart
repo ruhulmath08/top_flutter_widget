@@ -35,5 +35,10 @@ class WidgetModel {
         WidgetModel(name: stackWidgetTitle),
         WidgetModel(name: positionedWidgetTitle),
         WidgetModel(name: alertDialogTitle),
+        WidgetModel(name: makeWidgetClickableTitle),
+        WidgetModel(name: clickableWidgetWIthEffectTitle),
+        WidgetModel(name: interactiveWidgetTitle),
+        WidgetModel(name: checkboxListTileTitle),
+        WidgetModel(name: selectableTextTitle),
       ];
 }

@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:top_flutter_widget/interactive_widget/interactive_widget_screen.dart';
 import 'package:top_flutter_widget/routing/routing_constants.dart';
 import 'package:top_flutter_widget/screens/adaptive_design/adaptive_design_screen.dart';
 import 'package:top_flutter_widget/screens/alert_dialog/alert_dialog_screen.dart';
 import 'package:top_flutter_widget/screens/bottom_navigation_bar/bottom_navigation_bar_screen.dart';
+import 'package:top_flutter_widget/screens/checkbox_list_tile/checkbox_list_tile_screen.dart';
+import 'package:top_flutter_widget/screens/clickable_widget_with_effect/clickable_widget_with_effect.dart';
 import 'package:top_flutter_widget/screens/date_picker/date_picker_screen.dart';
 import 'package:top_flutter_widget/screens/disable_back_button/disable_back_button_screen.dart';
 import 'package:top_flutter_widget/screens/expanded_widget/expanded_widget_screen.dart';
@@ -15,6 +18,7 @@ import 'package:top_flutter_widget/screens/flutter_hero_widget/flutter_hero_widg
 import 'package:top_flutter_widget/screens/future_builder/future_builder_screen.dart';
 import 'package:top_flutter_widget/screens/grid_paper/grid_paper_screen.dart';
 import 'package:top_flutter_widget/screens/home/home_screen.dart';
+import 'package:top_flutter_widget/screens/make_widget_clickable/make_widget_clickable.dart';
 import 'package:top_flutter_widget/screens/modal_bottom_sheet/modal_bottom_sheet_screen.dart';
 import 'package:top_flutter_widget/screens/page_view_widget/page_view_widget_screen.dart';
 import 'package:top_flutter_widget/screens/popup_menu_button/popup_menu_button_screen.dart';
@@ -30,6 +34,7 @@ import 'package:top_flutter_widget/screens/stream_flow/stream_flow_screen.dart';
 import 'package:top_flutter_widget/screens/time_picker/time_picker_screen.dart';
 import 'package:top_flutter_widget/screens/tool_tip/tool_tip_screen.dart';
 import 'package:top_flutter_widget/screens/wrap_widget/wrap_widget_screen.dart';
+import 'package:top_flutter_widget/selectable_text/selectable_text_screen.dart';
 
 /*
 name route for page navigation
@@ -275,6 +280,46 @@ MaterialPageRoute<dynamic>? generateRoute(RouteSettings settings) {
       return MaterialPageRoute(
         builder: (context) => const AlertDialogScreen(
           title: alertDialogTitle,
+        ),
+      );
+
+    //make_widget_clickable
+    case makeWidgetClickableRoute:
+      return MaterialPageRoute(
+        builder: (context) => const MakeWidgetClickable(
+          title: makeWidgetClickableTitle,
+        ),
+      );
+
+    //clickable_widget_with_effect
+    case clickableWidgetWIthEffectRoute:
+      return MaterialPageRoute(
+        builder: (context) => const ClickableWidgetWithEffectScreen(
+          title: clickableWidgetWIthEffectTitle,
+        ),
+      );
+
+    //interactive_widget
+    case interactiveWidgetRoute:
+      return MaterialPageRoute(
+        builder: (context) => const InteractiveWidgetScreen(
+          title: interactiveWidgetTitle,
+        ),
+      );
+
+    //checkbox_list_tile
+    case checkboxListTileRoute:
+      return MaterialPageRoute(
+        builder: (context) => const CheckboxListTileScreen(
+          title: checkboxListTileTitle,
+        ),
+      );
+
+    //selectable_text
+    case selectableTextRoute:
+      return MaterialPageRoute(
+        builder: (context) => const SelectableTextScreen(
+          title: selectableTextTitle,
         ),
       );
   }
